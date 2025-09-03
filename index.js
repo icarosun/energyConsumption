@@ -30,6 +30,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {   
@@ -39,6 +40,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {   
@@ -48,6 +50,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {   
@@ -57,6 +60,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,       
     },
     {
@@ -66,6 +70,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -75,6 +80,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,  
     },
     {
@@ -84,6 +90,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -93,6 +100,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -102,6 +110,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -111,6 +120,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -120,6 +130,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -129,6 +140,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -138,6 +150,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -147,6 +160,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -156,6 +170,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -165,6 +180,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -174,6 +190,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -183,6 +200,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -192,6 +210,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -201,6 +220,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -210,6 +230,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -219,6 +240,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -228,6 +250,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -237,6 +260,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -246,6 +270,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
     {
@@ -255,6 +280,7 @@ const devices = [
         "quant": 0,
         "hour_day": 0,
         "day_months": 0,
+        "consumption": 0,
         "pay": 0,
     },
 ]
@@ -272,7 +298,7 @@ function addDevice() {
 
   const deviceSelected = parseInt(inputDevice.value);
 
-  if (deviceSelected > 2 || deviceSelected < 0) {
+  if (deviceSelected > 28 || deviceSelected < 0) {
       return 
   }
 
@@ -281,7 +307,7 @@ function addDevice() {
   if (table.find((row) => row.id == deviceSelected)) {
       showAlertInfo(); //TODO: removeAlertInfo();
   } else {
-      const teste = devices[deviceSelected - 1];
+      const teste = devices[deviceSelected];
 
       table.push(teste);
 
