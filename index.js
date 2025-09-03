@@ -24,7 +24,7 @@ const devices = [
         "pay": 0,
     },
     {  
-        "id": "3",
+        "id": "2",
         "deviceName": "Micro-ondas",
         "potency_w": 1500,
         "quant": 0,
@@ -34,7 +34,7 @@ const devices = [
         "pay": 0,
     },
     {   
-        "id": "4",
+        "id": "3",
         "deviceName": "Forno Elétrico",
         "potency_w": 2000,
         "quant": 0,
@@ -44,7 +44,7 @@ const devices = [
         "pay": 0,
     },
     {   
-        "id": "5",
+        "id": "4",
         "deviceName": "Fogão Elétrico (boca)",
         "potency_w": 2000,
         "quant": 0,
@@ -54,7 +54,7 @@ const devices = [
         "pay": 0,
     },
     {   
-        "id": "6",
+        "id": "5",
         "deviceName": "Lava-louças",
         "potency_w": 2200,
         "quant": 0,
@@ -64,7 +64,7 @@ const devices = [
         "pay": 0,       
     },
     {
-        "id": "7",
+        "id": "6",
         "deviceName": "Liquidificador",
         "potency_w": 800,
         "quant": 0,
@@ -74,7 +74,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "8",
+        "id": "7",
         "deviceName": "Batedeira",
         "potency_w": 500,
         "quant": 0,
@@ -84,7 +84,7 @@ const devices = [
         "pay": 0,  
     },
     {
-        "id": "9",
+        "id": "8",
         "deviceName": "Cafeteira Elétrica",
         "potency_w": 1200,
         "quant": 0,
@@ -94,7 +94,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "10",
+        "id": "9",
         "deviceName": "Sanduicheira/Grill",
         "potency_w": 1500,
         "quant": 0,
@@ -104,7 +104,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "11",
+        "id": "10",
         "deviceName": "Torradeira",
         "potency_w": 1400,
         "quant": 0,
@@ -114,7 +114,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "12",
+        "id": "11",
         "deviceName": "Máquina de lavar roupas",
         "potency_w": 800,
         "quant": 0,
@@ -124,7 +124,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "13",
+        "id": "12",
         "deviceName": "Centrífuga",
         "potency_w": 600,
         "quant": 0,
@@ -134,7 +134,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "14",
+        "id": "13",
         "deviceName": "Secadora de roupas",
         "potency_w": 3000,
         "quant": 0,
@@ -144,7 +144,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "15",
+        "id": "14",
         "deviceName": "Ferro de passar",
         "potency_w": 2000,
         "quant": 0,
@@ -154,7 +154,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "16",
+        "id": "15",
         "deviceName": "Televisão LED",
         "potency_w": 150,
         "quant": 0,
@@ -164,7 +164,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "17",
+        "id": "16",
         "deviceName": "Aparelho de som",
         "potency_w": 200,
         "quant": 0,
@@ -174,7 +174,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "18",
+        "id": "17",
         "deviceName": "Videogame",
         "potency_w": 200,
         "quant": 0,
@@ -184,7 +184,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "19",
+        "id": "18",
         "deviceName": "Computador de mesa (desktop)",
         "potency_w": 400,
         "quant": 0,
@@ -194,7 +194,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "20",
+        "id": "19",
         "deviceName": "Notebook",
         "potency_w": 100,
         "quant": 0,
@@ -204,7 +204,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "21",
+        "id": "20",
         "deviceName": "Carregador de celular",
         "potency_w": 15,
         "quant": 0,
@@ -214,7 +214,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "22",
+        "id": "21",
         "deviceName": "Ar-condicionado (janela/split)",
         "potency_w": 2500,
         "quant": 0,
@@ -224,7 +224,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "23",
+        "id": "22",
         "deviceName": "Ventilador de mesa/teto",
         "potency_w": 100,
         "quant": 0,
@@ -234,7 +234,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "24",
+        "id": "23",
         "deviceName": "Aquecedor Elétrico",
         "potency_w": 2000,
         "quant": 0,
@@ -244,7 +244,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "25",
+        "id": "24",
         "deviceName": "Desudimificador",
         "potency_w": 400,
         "quant": 0,
@@ -254,7 +254,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "26",
+        "id": "25",
         "deviceName": "Lâmpada incandescente",
         "potency_w": 100,
         "quant": 0,
@@ -264,7 +264,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "27",
+        "id": "26",
         "deviceName": "Lâmpada fluorescente",
         "potency_w": 40,
         "quant": 0,
@@ -274,7 +274,7 @@ const devices = [
         "pay": 0,
     },
     {
-        "id": "28",
+        "id": "27",
         "deviceName": "Lâmpada LED",
         "potency_w": 20,
         "quant": 0,
