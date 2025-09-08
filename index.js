@@ -384,10 +384,22 @@ function handleInputChange(e) {
 
   row.querySelector(".consumption").textContent = consumption.toFixed(2);
   row.querySelector(".pay").textContent = `R$ ${pay.toFixed(2)}`;
+  const total = totalSum(table);
+  document.querySelector("#totalpay").textContent = `R$ ${total.toFixed(2)}`;
 }
 
 function handleDeleteRow(e) {
   const index = Number(e.target.dataset.index);
   table.splice(index, 1);
   showTable();
+}
+
+function totalSum(list) {
+    let total = 0;
+    for (const device of list) {
+        total += Number(device.pay) || 0;
+    }
+
+    return total;
+
 }
