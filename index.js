@@ -384,6 +384,8 @@ function handleInputChange(e) {
 
   row.querySelector(".consumption").textContent = consumption.toFixed(2);
   row.querySelector(".pay").textContent = `R$ ${pay.toFixed(2)}`;
+  const total = totalSum(table);
+  document.querySelector("#totalpay").textContent = `R$ ${total.toFixed(2)}`;
 }
 
 function handleDeleteRow(e) {
@@ -393,32 +395,11 @@ function handleDeleteRow(e) {
 }
 
 function totalSum(list) {
-    console.log(list[0].pay); 
-    console.log(list[1].pay);  
-    console.log(list[2].pay); 
-    console.log(list[3].pay);
-    console.log(list[4].pay);
-    console.log(list[5].pay);
-    console.log(list[6].pay);
-    console.log(list[7].pay);
-    console.log(list[8].pay);
-    console.log(list[9].pay);
-    console.log(list[10].pay);
-    console.log(list[11].pay);
-    console.log(list[12].pay);
-    console.log(list[13].pay);
-    console.log(list[14].pay); 
-    console.log(list[15].pay);
-    console.log(list[16].pay);
-    console.log(list[17].pay);
-    console.log(list[18].pay);
-    console.log(list[19].pay);
-    console.log(list[20].pay);
-    console.log(list[21].pay);
-    console.log(list[22].pay);
-    console.log(list[23].pay);
-    console.log(list[24].pay);
-    console.log(list[25].pay);
-    console.log(list[26].pay);
-    console.log(list[27].pay);                                                                        
+    let total = 0;
+    for (const device of list) {
+        total += Number(device.pay) || 0;
+    }
+
+    return total;
+
 }
