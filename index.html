@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de gastos</title>
+    <style>
+      body {
+        text-align: center;
+        max-width: 600px;
+        margin: 50px auto;
+      }
+
+      table {
+        marginRight:;
+      }
+    </style>
 </head>
 <body>
     <select id="device" list="brow" value="">
@@ -41,32 +52,36 @@
     <button type="button" onclick="addDevice()">Adicionar</button>
 
     <p id="info"></p>
+    
+    <canvas id="graph"></canvas> <!-- Local onde o gráfico será desenhado -->
+    
     <div id ="total-container"
-      <strong>Total a pagar:</strong> <span id="totalpay">R$ 0,00</span>
-   </div>
+        <strong>Total a pagar:</strong> <span id="totalpay">R$ 0,00</span>
+    </div>
 
-    <!-- <table id="table" border="1"> -->
-    <!-- </table> -->
-
-    <table>
-      <thead>
-        <tr>
-          <th>Dispositivo</th>
-          <th>Potência (W)</th>
-          <th>Quantidade</th>
-          <th>Horas/Dia</th>
-          <th>Dias/Mês</th>
-          <th>Consumo (kWh)</th>
-          <th>Pagamento</th>
-          <th>Ações</th>
-        </tr>
-      </thead>
-      <tbody id="table_body"></tbody>
-    </table>
+    <figure class="wp-block-table">
+      <table border="1" class="has-fixed-layout">
+        <thead>
+          <tr>
+            <th>Dispositivo</th>
+            <th>Potência (W)</th>
+            <th>Quantidade</th>
+            <th>Horas/Dia</th>
+            <th>Dias/Mês</th>
+            <th>Consumo (kWh)</th>
+            <th>Pagamento</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="table_body"></tbody>
+      </table>
+    </figure>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Importa Chart.js -->
     
     <script src="index.js"></script>
 </body>

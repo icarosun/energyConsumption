@@ -313,6 +313,7 @@ function addDevice() {
 
       // createHeaderTable();
       showTable();
+      createGraph();
   }
  }
 
@@ -384,22 +385,68 @@ function handleInputChange(e) {
 
   row.querySelector(".consumption").textContent = consumption.toFixed(2);
   row.querySelector(".pay").textContent = `R$ ${pay.toFixed(2)}`;
+
   const total = totalSum(table);
   document.querySelector("#totalpay").textContent = `R$ ${total.toFixed(2)}`;
+
+  createGraph();
 }
 
 function handleDeleteRow(e) {
   const index = Number(e.target.dataset.index);
   table.splice(index, 1);
   showTable();
+  createGraph();
+
+  const total = totalSum(table);
+  document.querySelector("#totalpay").textContent = `R$ ${total.toFixed(2)}`;
+}
+let myChart = null; 
+
+function createGraph() {
+  const canvas = document.getElementById('graph').getContext('2d');
+  
+  if (canvas.chart) {
+    canvas.chart.destroy();
+  }
+
+  if (myChart !== null) {
+    myChart.destroy();
+  }
+
+  if (table.length > 0) {
+    myChart = new Chart(canvas, {
+      type: 'bar', 
+      data: {
+        labels: table.map((device) => device.deviceName),
+        datasets: [{
+          label: 'Consumo de energia (kWh/mês)',
+          data: table.map((device) => device.pay),
+          backgroundColor: 'rgba(75, 192, 192, 0.5)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }  // config do gráfico
+    });
+  } else {
+    canvas.chart.destroy();
+    myChart.destroy();
+  }
 }
 
 function totalSum(list) {
     let total = 0;
+
     for (const device of list) {
         total += Number(device.pay) || 0;
     }
 
     return total;
-
 }
