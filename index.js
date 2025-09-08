@@ -401,6 +401,7 @@ function handleDeleteRow(e) {
   const total = totalSum(table);
   document.querySelector("#totalpay").textContent = `R$ ${total.toFixed(2)}`;
 }
+
 let myChart = null; 
 
 function createGraph() {
@@ -421,7 +422,7 @@ function createGraph() {
         labels: table.map((device) => device.deviceName),
         datasets: [{
           label: 'Consumo de energia (kWh/mês)',
-          data: table.map((device) => device.pay),
+          data: table.map((device) => device.consumption),
           backgroundColor: 'rgba(75, 192, 192, 0.5)',
           borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1
